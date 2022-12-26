@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/choices.js/1.1.6/styles/css/choices.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <main>
+      <section class="filter"> 
+        <div class="container">
+          <h1 class="filter__title">Свой дом - поможет найти вам дом</h1>
+          <div class="filter-sections"> 
+            <div class="filter__section active">Купить</div>
+            <div class="filter__section">Продать</div>
+            <div class="filter__section">Недвижимость за границей</div>
+            <div class="filter__section">Финансовые продукты</div>
+            <div class="filter__section">Страхование</div>
+          </div>
+          <div class="filter-sections-select"> 
+            <select class="js-select" name="#">
+              <option value="Купить">Купить</option>
+              <option value="Продать">Продать</option>
+              <option value="Недвижимость за границей">Недвижимость за границей</option>
+              <option value="Финансовые продукты">Финансовые продукты</option>
+              <option value="Страхование">Страхование</option>
+            </select>
+          </div>
+          <div class="filter-wrapper"> 
+            <div class="filter-tabs"> 
+              <div class="filter__tab active">Новостройки</div>
+              <div class="filter__tab">Вторичная недвижимость</div>
+              <div class="filter__tab">Дома и участки</div>
+              <div class="filter__tab">Коммерция</div>
+            </div>
+            <div class="filter-inner filter-tab-content"> 
+              <div class="filter-row">
+                <div class="filter-item"> 
+                  <div class="filter-item__title">Города:</div>
+                  <select class="filter__select js-select" name=""> 
+                    <option value="Москва">Москва </option>
+                    <option value="Москва">Москва </option>
+                    <option value="Москва">Москва </option>
+                  </select>
+                </div>
+                <div class="filter-item"> 
+                  <div class="filter-item__title">Комнатность:</div>
+                  <div class="filter__checkboxes"> 
+                    <div class="form__checkbox"> 
+                      <input class="form__checkbox-input" type="checkbox" id="check-1" checked>
+                      <label class="form__checkbox-label" for="check-1">Студия</label>
+                    </div>
+                    <div class="form__checkbox"> 
+                      <input class="form__checkbox-input" type="checkbox" id="check-2">
+                      <label class="form__checkbox-label" for="check-2">1</label>
+                    </div>
+                    <div class="form__checkbox"> 
+                      <input class="form__checkbox-input" type="checkbox" id="check-3">
+                      <label class="form__checkbox-label" for="check-3">2</label>
+                    </div>
+                    <div class="form__checkbox"> 
+                      <input class="form__checkbox-input" type="checkbox" id="check-4">
+                      <label class="form__checkbox-label" for="check-4">3</label>
+                    </div>
+                    <div class="form__checkbox"> 
+                      <input class="form__checkbox-input" type="checkbox" id="check-5">
+                      <label class="form__checkbox-label" for="check-5">4+</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-item"> 
+                  <div class="filter-item__title">Стоимость, ₽:</div>
+                  <div class="filter-item__row"> 
+                    <label class="form__label" for="">
+                      <input class="form__input form__input--left" type="text" placeholder="от">
+                    </label>
+                    <label class="form__label" for="">
+                      <input class="form__input form__input--right" type="text" placeholder="до">
+                    </label>
+                  </div>
+                </div>
+                <div class="filter-item"> 
+                  <div class="filter-item__title">Площадь, м2:</div>
+                  <div class="filter-item__row"> 
+                    <label class="form__label" for="">
+                      <input class="form__input form__input--left" type="text" placeholder="от">
+                    </label>
+                    <label class="form__label" for="">
+                      <input class="form__input form__input--right" type="text" placeholder="до">
+                    </label>
+                  </div>
+                </div>
+                <div class="filter-item"> 
+                  <div class="filter-item__title">Район:</div>
+                  <select class="filter__select js-select" name=""> 
+                    <option value="Район">Район </option>
+                    <option value="Район">Район </option>
+                    <option value="Район">Район </option>
+                  </select>
+                </div>
+                <div class="filter-item filter-item--hidden">
+                  <div class="filter-item__title">Срок сдачи:</div>
+                  <select class="filter__select js-select" name=""> 
+                    <option value="Срок сдачи">Срок сдачи</option>
+                    <option value="Срок сдачи">Срок сдачи </option>
+                    <option value="Срок сдачи">Срок сдачи</option>
+                  </select>
+                </div>
+                <div class="filter-item filter-item--hidden"> 
+                  <div class="filter-item__title">Жилой компекс:</div>
+                  <select class="filter__select js-select" name=""> 
+                    <option value="Жилой комплекс">Жилой компекс</option>
+                    <option value="Жилой комплекс">Жилой компекс</option>
+                    <option value="Жилой комплекс">Жилой компекс</option>
+                  </select>
+                </div>
+                <div class="filter-item filter-item--hidden"> 
+                  <div class="filter-item__title">Отделка:</div>
+                  <select class="filter__select js-select" name=""> 
+                    <option value="Отделка">Отделка</option>
+                    <option value="Отделка">Отделка</option>
+                    <option value="Отделка">Отделка</option>
+                  </select>
+                </div>
+                <div class="filter-item filter-item--hidden"> 
+                  <div class="filter-item__title">Площадь кухни, м2:</div>
+                  <div class="filter-item__row"> 
+                    <label class="form__label" for="">
+                      <input class="form__input form__input--left" type="text" placeholder="от">
+                    </label>
+                    <label class="form__label" for="">
+                      <input class="form__input form__input--right" type="text" placeholder="до">
+                    </label>
+                  </div>
+                </div>
+                <div class="filter-item filter-item--hidden"> 
+                  <div class="filter-item__title">Материал</div>
+                  <select class="filter__select js-select" name=""> 
+                    <option value="Материал">Материал</option>
+                    <option value="Материал">Материал</option>
+                    <option value="Материал">Материал</option>
+                  </select>
+                </div>
+                <div class="filter-item filter-item--hidden"> 
+                  <div class="filter-item__title">Год постройки</div>
+                  <select class="filter__select js-select" name=""> 
+                    <option value="Год постройки">Год постройки</option>
+                    <option value="Год постройки">Год постройки</option>
+                    <option value="Год постройки">Год постройки</option>
+                  </select>
+                </div>
+                <div class="filter-item filter-item--hidden"> 
+                  <div class="filter-item__title">Этаж:</div>
+                  <select class="filter__select js-select" name=""> 
+                    <option value="Этаж">Этаж</option>
+                    <option value="Этаж">Этаж</option>
+                    <option value="Этаж">Этаж</option>
+                  </select>
+                </div>
+                <div class="filter__controls"> 
+                  <div class="filter__btn-map btn btn--secondary"> 
+                    <svg width="21" height="21" aria-hidden="true">
+                      <use xlink:href="../images/sprite.svg#ico-adress"></use>
+                    </svg>Показать на карте
+                  </div>
+                  <div class="filter__btn-purchase btn">Показать предложения</div>
+                  <div class="filter__btn-show">Скрыть параметры</div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-row"></div>
+          </div>
+        </div>
+      </section>
+      <section class="complex-list"> 
+        <div class="container"> 
+          <div class="complex-list__title">Жилые комплексы</div>
+          <div class="complex-items">
+            <div class="complex-item"> 
+              <div class="complex-item__gallery"> 
+                <div class="swiper-wrapper"> 
+                  <div class="swiper-slide"> <img src="../images/complex-item.png" alt="ЖК"></div>
+                  <div class="swiper-slide"> <img src="../images/complex-item.png" alt="ЖК"></div>
+                  <div class="swiper-slide"> <img src="../images/complex-item.png" alt="ЖК"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="complex-item__main"> 
+                <div class="complex-item__info"> 
+                  <div class="complex-item__name">Рублевский Квартал</div>
+                  <div class="complex-item__adress"> 
+                    <svg width="25" height="25" aria-hidden="true">
+                      <use xlink:href="../images/sprite.svg#ico-adress"></use>
+                    </svg>г. Тюмень, Дамбовская 25
+                  </div>
+                  <div class="complex-item__subway"> 
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="../images/sprite.svg#ico-subway"></use>
+                    </svg>Деловой центр
+                  </div>
+                  <div class="complex-item__complete">Срок сдачи: 2кв. 2022г. - 4кв. 2022г.</div>
+                  <div class="complex-item__desc">
+                    Это экологичный проект рядом с Дубковским и Подушкинским лесами. Он сочетает близость к природным комплексам, престижный статус западного направления и возможность удобно добраться до столицы.</div>
+                  <div class="complex-item__controls"> 
+                    <div class="complex-item__request btn">Записаться на просмотр</div>
+                    <div class="complex-item__call btn btn--secondary"> 
+                      <svg width="13" height="17" aria-hidden="true">
+                        <use xlink:href="../images/sprite.svg#ico-tel"></use>
+                      </svg>Позвонить
+                    </div>
+                    <div class="complex-item__map btn btn--secondary"> 
+                      <svg width="21" height="21" aria-hidden="true">
+                        <use xlink:href="../images/sprite.svg#ico-adress"></use>
+                      </svg>На карте
+                    </div>
+                  </div>
+                </div>
+                <div class="complex-item__flats">
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">Студии</div>
+                    <div class="complex-item__flat-size">от 25,04м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">3.31-4.28 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">1-комн.</div>
+                    <div class="complex-item__flat-size">от 34,25м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">4.25-4.59 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">2-комн.</div>
+                    <div class="complex-item__flat-size">от 65,70м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">7.07-10.3 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">3-комн.</div>
+                    <div class="complex-item__flat-size">от 85,79м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">8.03-10.93 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">4-комн.</div>
+                    <div class="complex-item__flat-size">от 95,99м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">9.59-11.63 млн ₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="complex-item"> 
+              <div class="complex-item__gallery"> 
+                <div class="swiper-wrapper"> 
+                  <div class="swiper-slide"> <img src="../images/complex-item-2.png" alt="ЖК"></div>
+                  <div class="swiper-slide"> <img src="../images/complex-item-2.png" alt="ЖК"></div>
+                  <div class="swiper-slide"> <img src="../images/complex-item-3.png" alt="ЖК"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="complex-item__main"> 
+                <div class="complex-item__info"> 
+                  <div class="complex-item__name">Долина Яузы</div>
+                  <div class="complex-item__adress"> 
+                    <svg width="25" height="25" aria-hidden="true">
+                      <use xlink:href="../images/sprite.svg#ico-adress"></use>
+                    </svg>г. Тюмень, Дамбовская 25
+                  </div>
+                  <div class="complex-item__subway"> 
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="../images/sprite.svg#ico-subway"></use>
+                    </svg>Деловой центр
+                  </div>
+                  <div class="complex-item__complete">Срок сдачи: 2кв. 2022г. - 4кв. 2022г.</div>
+                  <div class="complex-item__desc">
+                    Это экологичный проект рядом с Дубковским и Подушкинским лесами. Он сочетает близость к природным комплексам, престижный статус западного направления и возможность удобно добраться до столицы.</div>
+                  <div class="complex-item__controls"> 
+                    <div class="complex-item__request btn">Записаться на просмотр</div>
+                    <div class="complex-item__call btn btn--secondary"> 
+                      <svg width="13" height="17" aria-hidden="true">
+                        <use xlink:href="../images/sprite.svg#ico-tel"></use>
+                      </svg>Позвонить
+                    </div>
+                    <div class="complex-item__map btn btn--secondary"> 
+                      <svg width="21" height="21" aria-hidden="true">
+                        <use xlink:href="../images/sprite.svg#ico-adress"></use>
+                      </svg>На карте
+                    </div>
+                  </div>
+                </div>
+                <div class="complex-item__flats">
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">Студии</div>
+                    <div class="complex-item__flat-size">от 25,04м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">3.31-4.28 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">1-комн.</div>
+                    <div class="complex-item__flat-size">от 34,25м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">4.25-4.59 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">2-комн.</div>
+                    <div class="complex-item__flat-size">от 65,70м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">7.07-10.3 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">3-комн.</div>
+                    <div class="complex-item__flat-size">от 85,79м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">8.03-10.93 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">4-комн.</div>
+                    <div class="complex-item__flat-size">от 95,99м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">9.59-11.63 млн ₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="complex-item"> 
+              <div class="complex-item__gallery"> 
+                <div class="swiper-wrapper"> 
+                  <div class="swiper-slide"> <img src="../images/complex-item-3.png" alt="ЖК"></div>
+                  <div class="swiper-slide"> <img src="../images/complex-item-3.png" alt="ЖК"></div>
+                  <div class="swiper-slide"> <img src="../images/complex-item-3.png" alt="ЖК"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="complex-item__main"> 
+                <div class="complex-item__info"> 
+                  <div class="complex-item__name">Квартал Ивакино</div>
+                  <div class="complex-item__adress"> 
+                    <svg width="17" height="20" aria-hidden="true">
+                      <use xlink:href="../images/sprite.svg#ico-adress"></use>
+                    </svg>г. Тюмень, Дамбовская 25
+                  </div>
+                  <div class="complex-item__subway"> 
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="../images/sprite.svg#ico-subway"></use>
+                    </svg>Деловой центр
+                  </div>
+                  <div class="complex-item__complete">Срок сдачи: 2кв. 2022г. - 4кв. 2022г.</div>
+                  <div class="complex-item__desc">
+                    Это экологичный проект рядом с Дубковским и Подушкинским лесами. Он сочетает близость к природным комплексам, престижный статус западного направления и возможность удобно добраться до столицы.</div>
+                  <div class="complex-item__controls"> 
+                    <div class="complex-item__request btn">Записаться на просмотр</div>
+                    <div class="complex-item__call btn btn--secondary"> 
+                      <svg width="13" height="17" aria-hidden="true">
+                        <use xlink:href="../images/sprite.svg#ico-tel"></use>
+                      </svg>Позвонить
+                    </div>
+                    <div class="complex-item__map btn btn--secondary"> 
+                      <svg width="21" height="21" aria-hidden="true">
+                        <use xlink:href="../images/sprite.svg#ico-adress"></use>
+                      </svg>На карте
+                    </div>
+                  </div>
+                </div>
+                <div class="complex-item__flats">
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">Студии</div>
+                    <div class="complex-item__flat-size">от 25,04м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">3.31-4.28 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">1-комн.</div>
+                    <div class="complex-item__flat-size">от 34,25м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">4.25-4.59 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">2-комн.</div>
+                    <div class="complex-item__flat-size">от 65,70м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">7.07-10.3 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">3-комн.</div>
+                    <div class="complex-item__flat-size">от 85,79м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">8.03-10.93 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">4-комн.</div>
+                    <div class="complex-item__flat-size">от 95,99м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">9.59-11.63 млн ₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="complex-item"> 
+              <div class="complex-item__gallery"> 
+                <div class="swiper-wrapper"> 
+                  <div class="swiper-slide"> <img src="../images/complex-item-4.png" alt="ЖК"></div>
+                  <div class="swiper-slide"> <img src="../images/complex-item-4.png" alt="ЖК"></div>
+                  <div class="swiper-slide"> <img src="../images/complex-item-4.png" alt="ЖК"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="complex-item__main"> 
+                <div class="complex-item__info"> 
+                  <div class="complex-item__name">Мытищи Парк</div>
+                  <div class="complex-item__adress"> 
+                    <svg width="25" height="25" aria-hidden="true">
+                      <use xlink:href="../images/sprite.svg#ico-adress"></use>
+                    </svg>г. Тюмень, Дамбовская 25
+                  </div>
+                  <div class="complex-item__subway"> 
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="../images/sprite.svg#ico-subway"></use>
+                    </svg>Деловой центр
+                  </div>
+                  <div class="complex-item__complete">Срок сдачи: 2кв. 2022г. - 4кв. 2022г.</div>
+                  <div class="complex-item__desc">
+                    Это экологичный проект рядом с Дубковским и Подушкинским лесами. Он сочетает близость к природным комплексам, престижный статус западного направления и возможность удобно добраться до столицы.</div>
+                  <div class="complex-item__controls"> 
+                    <div class="complex-item__request btn">Записаться на просмотр</div>
+                    <div class="complex-item__call btn btn--secondary"> 
+                      <svg width="13" height="17" aria-hidden="true">
+                        <use xlink:href="../images/sprite.svg#ico-tel"></use>
+                      </svg>Позвонить
+                    </div>
+                    <div class="complex-item__map btn btn--secondary"> 
+                      <svg width="21" height="21" aria-hidden="true">
+                        <use xlink:href="../images/sprite.svg#ico-adress"></use>
+                      </svg>На карте
+                    </div>
+                  </div>
+                </div>
+                <div class="complex-item__flats">
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">Студии</div>
+                    <div class="complex-item__flat-size">от 25,04м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">3.31-4.28 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">1-комн.</div>
+                    <div class="complex-item__flat-size">от 34,25м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">4.25-4.59 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">2-комн.</div>
+                    <div class="complex-item__flat-size">от 65,70м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">7.07-10.3 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">3-комн.</div>
+                    <div class="complex-item__flat-size">от 85,79м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">8.03-10.93 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">4-комн.</div>
+                    <div class="complex-item__flat-size">от 95,99м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">9.59-11.63 млн ₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="complex-item"> 
+              <div class="complex-item__gallery"> 
+                <div class="swiper-wrapper"> 
+                  <div class="swiper-slide"> <img src="../images/complex-item-5.png" alt="ЖК"></div>
+                  <div class="swiper-slide"> <img src="../images/complex-item-5.png" alt="ЖК"></div>
+                  <div class="swiper-slide"> <img src="../images/complex-item-5.png" alt="ЖК"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="complex-item__main"> 
+                <div class="complex-item__info"> 
+                  <div class="complex-item__name">Пригород Лесное</div>
+                  <div class="complex-item__adress"> 
+                    <svg width="25" height="25" aria-hidden="true">
+                      <use xlink:href="../images/sprite.svg#ico-adress"></use>
+                    </svg>г. Тюмень, Дамбовская 25
+                  </div>
+                  <div class="complex-item__subway"> 
+                    <svg width="20" height="20" aria-hidden="true">
+                      <use xlink:href="../images/sprite.svg#ico-subway"></use>
+                    </svg>Деловой центр
+                  </div>
+                  <div class="complex-item__complete">Срок сдачи: 2кв. 2022г. - 4кв. 2022г.</div>
+                  <div class="complex-item__desc">
+                    Это экологичный проект рядом с Дубковским и Подушкинским лесами. Он сочетает близость к природным комплексам, престижный статус западного направления и возможность удобно добраться до столицы.</div>
+                  <div class="complex-item__controls"> 
+                    <div class="complex-item__request btn">Записаться на просмотр</div>
+                    <div class="complex-item__call btn btn--secondary"> 
+                      <svg width="13" height="17" aria-hidden="true">
+                        <use xlink:href="../images/sprite.svg#ico-tel"></use>
+                      </svg>Позвонить
+                    </div>
+                    <div class="complex-item__map btn btn--secondary"> 
+                      <svg width="21" height="21" aria-hidden="true">
+                        <use xlink:href="../images/sprite.svg#ico-adress"></use>
+                      </svg>На карте
+                    </div>
+                  </div>
+                </div>
+                <div class="complex-item__flats">
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">Студии</div>
+                    <div class="complex-item__flat-size">от 25,04м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">3.31-4.28 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">1-комн.</div>
+                    <div class="complex-item__flat-size">от 34,25м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">4.25-4.59 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">2-комн.</div>
+                    <div class="complex-item__flat-size">от 65,70м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">7.07-10.3 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">3-комн.</div>
+                    <div class="complex-item__flat-size">от 85,79м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">8.03-10.93 млн ₽</div>
+                  </div>
+                  <div class="complex-item__flat"> 
+                    <div class="complex-item__flat-type">4-комн.</div>
+                    <div class="complex-item__flat-size">от 95,99м<sup>2</sup></div>
+                    <div class="complex-item__flat-price">9.59-11.63 млн ₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="complex-list__pagination"> <img src="../images/pagination.png" alt=""></div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/choices.js/1.1.6/choices.min.js"> </script>
+    <script src="../scripts/main.js"> </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/choices.js/1.1.6/styles/css/choices.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <main>
+      <section class="filter"> 
+        <div class="container">
+          <h1 class="filter__title">Свой дом - поможет найти вам дом</h1>
+          <div class="filter-sections"> 
+            <div class="filter__section">Купить</div>
+            <div class="filter__section active">Продать</div>
+            <div class="filter__section">Недвижимость за границей</div>
+            <div class="filter__section">Финансовые продукты</div>
+            <div class="filter__section">Страхование</div>
+          </div>
+          <div class="filter-sections-select"> 
+            <select class="js-select" name="#">
+              <option value="Купить">Купить</option>
+              <option value="Продать">Продать</option>
+              <option value="Недвижимость за границей">Недвижимость за границей</option>
+              <option value="Финансовые продукты">Финансовые продукты</option>
+              <option value="Страхование">Страхование</option>
+            </select>
+          </div>
+          <div class="filter-wrapper"> 
+            <div class="filter-buy"> 
+              <div class="filter-buy__img"> <img src="../images/buy.png" alt=""></div>
+              <div class="filter-buy__main">
+                <div class="filter-buy__info"> 
+                  <div class="filter-buy__title">Вы хотите продать квартиру или дом?</div>
+                  <div class="filter-buy__desc">Заполните форму и мы обязательно поможем вам с этим.</div>
+                </div>
+                <div class="filter-buy__form"> 
+                  <div class="form-item"> 
+                    <div class="form-item__title">Тип объекта:</div>
+                    <div class="form-item__select">
+                      <select class="js-select" name="">
+                        <option value="Тип объекта">Тип объекта</option>
+                        <option value="Тип объекта">Тип объекта</option>
+                        <option value="Тип объекта">Тип объекта</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-item"> 
+                    <div class="form-item__title">Ваш телефон:</div>
+                    <div class="form-item__input"> 
+                      <label class="form__label" for="">
+                        <input class="form__input" type="number" placeholder="+7(495) _ _-_ _-_ _ _">
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-item"> 
+                    <div class="form-item__title">Ваше имя:</div>
+                    <div class="form-item__input"> 
+                      <label class="form__label" for="">
+                        <input class="form__input" type="text" placeholder="Имя">
+                      </label>
+                    </div>
+                  </div>
+                  <button class="btn form__btn">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/choices.js/1.1.6/choices.min.js"> </script>
+    <script src="../scripts/main.js"> </script>
+  </body>
+</html>
